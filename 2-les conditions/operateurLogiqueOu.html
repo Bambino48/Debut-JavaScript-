@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        const operateurLogiqueOu = 13
+        const etatsUnis = "US"
+        if(
+            (france == "FR" && operateurLogiqueEt >= 18) 
+            || 
+            (etatsUnis == "US" && operateurLogiqueOu >= 16)){
+
+            console.log("cas 2 : Vous avez le droit de conduire.")
+        }
+
+        const peutConduireEnFrance = france == "FR" && operateurLogiqueEt >= 18
+        const peutConduireAuUsa = etatsUnis == "US" && operateurLogiqueOu >= 16
+        if(peutConduireEnFrance || peutConduireAuUsa){
+            console.log("cas 3 : Vous avez le droit de conduire.")
+        }else{
+            console.log("Vous n'avez pas le droit de conduire")
+        }
+
+        if(peutConduireEnFrance){
+            console.log("Vous avez le droit de conduire en France")
+        }else if(peutConduireAuUsa){
+            console.log("Vous avez le droit de conduire aux USA")
+        }else{
+            console.log("Vous n'avez pas le droit de conduire")
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

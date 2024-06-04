@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        console.log("Exercice 2 : ")
+        console.log(`Enonce :
+        Entrer deux nombre a et b et multiplier a par b et dit si le resultat est positif ou negatif.`)
+
+        console.log("Resolution : ")
+        const a = prompt("Veillez entrer un premier nombre : ")
+        const b = prompt("Veillez entrer un deuxieme nombre : ")
+        const result = a * b
+        let signe
+        if(isNaN(result)){
+            console.log(`Operation impossible: ${a} x ${b}`)
+        }else{
+            if(result > 0){
+                signe = "Positif"
+            }else{
+                signe = "Negatif"
+            }
+            console.log(`${a} x ${b} = ${result} est ${signe}`)
+        }
+        
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
