@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let age = 18
+        let suffix = 18
+        if(age >= 18){
+            // la variable declare est utilisable que dans le bloc du code de cette  condition
+            // Une variable declarer en dehors du code bloc est accessible dans la condition
+            let suffix = 4
+            console.log(suffix)
+            age *= 2 // la variable age est multiplier par 2
+            console.log(age)
+            // La variable declarer avec le mot cle var a une portee qui va au dela du code bloc 
+            var exterieur = 200
+        }
+        // la variable suffix n'est pas accessible car elle est en dehors du code bloc
+        console.log(suffix) // Erreur de reference dans la console
+        console.log(exterieur)
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
